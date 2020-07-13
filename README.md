@@ -63,7 +63,8 @@ Moday: Html basics.  CSS placement of objects.  JS return GIF data.
 Tuesday: Create functionality in Buttons and Search bar.  Standardize the gif sizing. Confirm API is cycling through the Gifs 
 Wednesday:Create the Dynamic aspect of app for screen sizing. 
 
-- **Priority Matrix**: A graph of your intended areas of development (Pseudocoding, Design, HTML, CSS, JavaScript, Testing, etc) plotted on an X/Y axis where X represents time to completion and Y represents priority. Use a professional tool or upload a well drawn image using an image hosting site such as [Cloudinary](https://cloudinary.com/) or a similar hosting service.
+- **Priority Matrix**:
+http://www.mediafire.com/view/lnouhe17fw2gmeg/Chart%20Time%20x%20Priority.JPG
 - **Timeframes**: How long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. Components should be broken down into a maximum of 3 hours time blocks.
 
 Are you interested in styling your README.md to make it look nice? Don't know how to include photos or create links? Check out this [Markdown Cheetsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)!
