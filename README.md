@@ -65,7 +65,7 @@ Wednesday:Create the Dynamic aspect of app for screen sizing.
 
 - **Priority Matrix**:
 http://www.mediafire.com/view/lnouhe17fw2gmeg/Chart%20Time%20x%20Priority.JPG
-- **Timeframes**: How long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. Components should be broken down into a maximum of 3 hours time blocks.
+- **Timeframes**: http://www.mediafire.com/view/eycjm6h4xulzrgv/Time%20Sheet.JPG
 
 Are you interested in styling your README.md to make it look nice? Don't know how to include photos or create links? Check out this [Markdown Cheetsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)!
 
