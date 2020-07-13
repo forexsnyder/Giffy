@@ -6,22 +6,63 @@
 
 ### STEP 2: Pitch Your Project
 Before you start any actual coding, you must meet with your Squad Leader for ~10 minutes to get your app idea approved. Prepare the following materials _before_ your meeting and put them in your README.md:
-- **App Title**: The name of your app.
-- **App Description**: What your app will do.
-- **API**: The API you are using and the information you plan to get from it.
-- **API Snippet**: A sample snippet of JSON from a successful GET request you have made to your API using Postman.
+- **App Title**:
 Giphy's Gif Giffer
+- **App Description**:
 This app will enables the user to search  Giphy.com's gif library.  It presents the Gif in the middle of the screen.  There is a Next and Back button to allow navigation of the search results. 
-The API the project uses is https://developers.giphy.com/.
+- **API**:
+The API the project uses is https://developers.giphy.com/.- 
+**API Snippet**: 
 
+
+An example of the API's code snippet:
+
+    "data": {
+        "type": "gif",
+        "id": "jqYW2qyvWZGG8Shoqo",
+        "url": "https://giphy.com/gifs/luliygabo-jqYW2qyvWZGG8Shoqo",
+        "slug": "luliygabo-jqYW2qyvWZGG8Shoqo",
+        "bitly_gif_url": "https://gph.is/g/aQxGkkE",
+        "bitly_url": "https://gph.is/g/aQxGkkE",
+        "embed_url": "https://giphy.com/embed/jqYW2qyvWZGG8Shoqo",
+        "username": "luliygabo",
+        "source": "",
+        "title": "GIF by Luli y Gabo",
+        "rating": "g",
+        "content_url": "",
+        "source_tld": "",
+        "source_post_url": "",
+        "is_sticker": 0,
+        "import_datetime": "2019-05-06 17:09:36",
+        "trending_datetime": "0000-00-00 00:00:00",
+        "images": {
+            "downsized_large": {
+                "height": "480",
+                "size": "2974405",
+                "url": "https://media3.giphy.com/media/jqYW2qyvWZGG8Shoqo/giphy.gif?cid=13158784123ffa174cafa2017887f9502e7c7fa6831637b3&rid=giphy.gif",
+                "width": "480"
+            },
+            "fixed_height_small_still": {
+                "height": "100",
+                "size": "2307",
+                "url": "https://media3.giphy.com/media/jqYW2qyvWZGG8Shoqo/100_s.gif?cid=13158784123ffa174cafa2017887f9502e7c7fa6831637b3&rid=100_s.gif",
+                "width": "100"
+            },
+
+
+- **Wireframes**:
 https://wireframe.cc/mGukNC
 
 
-
-- **Wireframes**:  The proposed layout and design of your app. Create mockups for your views. If your are creating multiple views including both desktop and mobile formats, and consider whether or not you need to account for landscape and portrait orientations. Please use a digital tool to complete your wireframe.
-- **MVP**: A list of features you will need to build in order to meet the Minimum Viable Product. This will be the rubric your project will be graded against.
-- **Post-MVP**: A list of additional/advanced features you would like to include in your app after you have met MVP.
+- **MVP**: 
+Features include.  Search bar with a Submit button.  Display results in the middle of the page.  Navigation buttons.  Return results from Giphy API. Dynamic scaling, nvigation buttons will change according to screen size.
+- **Post-MVP**:
+Queue the next 5 Gifs in a window at the bottom of the screen.  Be able to tap on the gif to enlarge and see only the gif.  Have a return button.
 - **Goals**: What you plan to accomplish for each day of the project week.
+Moday: Html basics.  CSS placement of objects.  JS return GIF data.
+Tuesday: Create functionality in Buttons and Search bar.  Standardize the gif sizing. Confirm API is cycling through the Gifs 
+Wednesday:Create the Dynamic aspect of app for screen sizing. 
+
 - **Priority Matrix**: A graph of your intended areas of development (Pseudocoding, Design, HTML, CSS, JavaScript, Testing, etc) plotted on an X/Y axis where X represents time to completion and Y represents priority. Use a professional tool or upload a well drawn image using an image hosting site such as [Cloudinary](https://cloudinary.com/) or a similar hosting service.
 - **Timeframes**: How long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. Components should be broken down into a maximum of 3 hours time blocks.
 
