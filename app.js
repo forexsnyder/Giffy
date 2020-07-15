@@ -14,7 +14,8 @@ function ending() {
   return end
 }
 
-
+let gifArray = 0
+data = null
 
 // API Country call function
 async function fetchData(gif) {
@@ -22,7 +23,7 @@ async function fetchData(gif) {
   try {
 
 
-    data = null
+
 
     //let data.Title = ''//http://www.omdbapi.com/?apikey=3e89f4b8&s=casablanca
     let gifData = await axios.get(gifApi() + `${gif}` + ending())
@@ -32,8 +33,15 @@ async function fetchData(gif) {
 
 
     // console.log(data[0].embed_url)
-    let gifArray = 0
+
+
+
     showGifData(data[gifArray])
+    rightButton(gifArray)
+    console.log(gifArray)
+    leftButton(gifArray)
+    console.log(gifArray)
+
 
     // backButton(data)
     //create DIV styl
@@ -66,11 +74,36 @@ function search() {
     // createDiv()
     fetchData(inputValue)
 
-    // document.getElementById('blank').value = ''
-    // document.getElementById('search').value = ''
+
   })
 }
 search()
+function rightButton() {
+  const rButton = document.getElementById("r-button")
+  rButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    removeGif()
+    gifArray++
+    console.log(gifArray)
+    showGifData(data[gifArray])
+  })
+
+}
+
+function leftButton() {
+  const lButton = document.getElementById("l-button")
+  lButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    removeGif()
+    gifArray--
+    console.log(gifArray)
+    showGifData(data[gifArray])
+
+  })
+
+}
+
+
 // Create dynamic HTML
 function showGifData(data) {
   let gifContainer = document.getElementById('center-gif')
@@ -94,14 +127,3 @@ function removeGif() {
 
 }
 
-// function createDiv() {
-//   let h2Tag = document.getElementsByTagName("h2")[0]
-//   let movieContainer = document.createElement('div')
-//   movieContainer.id = "movie-container"
-//   //insert sibling after  H2
-//   h2Tag.appendChild(movieContainer)
-//   movieContainer.style.display = "grid"
-//   movieContainer.style.gridTemplateColumns = "repeat(auto-fill,minmax(240px,1fr))"
-//   movieContainer.style.justifyContent = "center"
-//   movieContainer.style.gridGap = "12px"
-// }
