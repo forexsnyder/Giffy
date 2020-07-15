@@ -31,9 +31,11 @@ async function fetchData(gif) {
     data = gifData.data.data
 
 
-    console.log(data[0].embed_url)
+    // console.log(data[0].embed_url)
+    let gifArray = 0
+    showGifData(data[gifArray])
 
-
+    // backButton(data)
     //create DIV styl
     // for (i = 0; i < data.length; i++) {
     //   showGifData(data[i])
@@ -60,7 +62,7 @@ function search() {
     e.preventDefault()
     const inputValue = document.getElementById('blank').value
     //console.log(inputValue)
-    // removeMovie()
+    removeGif()
     // createDiv()
     fetchData(inputValue)
 
@@ -72,22 +74,25 @@ search()
 // Create dynamic HTML
 function showGifData(data) {
   let gifContainer = document.getElementById('center-gif')
-  let gifPicture = document.createElement('img')
+  let gifPicture = document.createElement('iframe')
   gifPicture.id = "gif"
-  gifPicture.src = `${data.embed_url}`
+
+  // gifPicture.src = `${data.embed_url}`
+  gifPicture.src = `${data.images.downsized_large.url}`
+  console.log(gifPicture)
   gifContainer.appendChild(gifPicture)
   console.log(gifPicture)
 
   // moviePoster.style.textJustify = "bottom"
   // moviePoster.style.fontSize = "25px"
 }
-// function removeMovie() {
-//   const appendH2 = document.getElementsByTagName("h2")[0]
-//   while (appendH2.lastChild) {
-//     appendH2.removeChild(appendH2.lastChild)
-//   }
+function removeGif() {
+  const appendGif = document.getElementById("center-gif")
+  while (appendGif.lastChild) {
+    appendGif.removeChild(appendGif.lastChild)
+  }
 
-// }
+}
 
 // function createDiv() {
 //   let h2Tag = document.getElementsByTagName("h2")[0]
