@@ -1,18 +1,20 @@
-const DOMAIN = `https://api.giphy.com/v1/gifs/`;
+const DOMAIN = `https://api.tenor.com/v1/search?q=`;
 
 
 
-const API_KEY = `alsRqap4lXDNE8kjicHAPXhK1BsE5hMx`; /* Your API key goes here */
+const API_KEY = `key=S91BSLYCXDMF`; /* Your API key goes here */
 
 
-const BASE_URL = `${DOMAIN}search?api_key=${API_KEY}&q=`;
+const BASE_URL = `${DOMAIN}`;
 function gifApi() {
   return BASE_URL
 }
 function ending() {
-  const end = `&limit=25&offset=0&rating=g&lang=eng`;
+  const end = `&${API_KEY}&limit=8`;
   return end
 }
+let test1 = gifApi() + ending()
+console.log(test1)
 
 let gifArray = 0
 data = null
@@ -27,10 +29,10 @@ async function fetchData(gif) {
 
     //let data.Title = ''//http://www.omdbapi.com/?apikey=3e89f4b8&s=casablanca
     let gifData = await axios.get(gifApi() + `${gif}` + ending())
-    console.log(gifData)
-    //search()
-    data = gifData.data.data
 
+    //search()
+    data = gifData.data.results
+    console.log(data)
 
     // console.log(data[0].embed_url)
 
@@ -109,11 +111,17 @@ function showGifData(data) {
   let gifContainer = document.getElementById('center-gif')
   let gifPicture = document.createElement('iframe')
   gifPicture.id = "gif"
-  gifPicture.style.minHeight = "600px"
+  gifPicture.style.width = "100%"
+  gifPicture.style.height = "600px"
+  // gifPicture.style.minHeight = "600px"
+
 
   // gifPicture.src = `${data.embed_url}`
-  gifPicture.src = `${data.images.original.webp}`
+  gifPicture.src = `${data.media[0].gif.url}`
   console.log(gifPicture)
+  // gifPicture.setAttribute('allowFullScreen', '')
+  // gifPicture.setAttribute("frameborder", "0")
+
   gifContainer.appendChild(gifPicture)
   console.log(gifPicture)
 
