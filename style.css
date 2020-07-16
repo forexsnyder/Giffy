@@ -62,8 +62,7 @@ border-style: solid;
   /* grid-area: right; */
    
    border-radius: 5px;
-  border-color: black;
-  border-style: solid;
+
   font-size: 80px;
 }
 #left-side{
@@ -106,12 +105,13 @@ border-style: solid; */
 border-style: solid; */
 }
 /* move arrows below gif */
-@media (max-width:900px){
+@media screen and (max-width:900px)and (min-width:600px),(min-height:1330){
   .row{
     display:grid;
     grid-template-columns:repeat(4,1fr) ;
     grid-template-rows: 4fr 1fr 1fr;
-    max-height: 600px;
+  max-height: 50vh;
+   
   }
 
   .row div:nth-child(2){
@@ -119,6 +119,7 @@ border-style: solid; */
 grid-column-end: 5;
 grid-row-start: 1;
 grid-row-end: 3;
+
   }
 .row div:nth-child(3){
   grid-column-start: 4;
