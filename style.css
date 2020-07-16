@@ -1,0 +1,132 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.header{
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  border-radius: 5px;
+border-color: maroon;
+border-style: solid;
+}
+/* Grid Container */
+.row{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  padding:10px;
+  justify-content:center;
+  align-items: center;
+  border-radius: 5px;
+  border-color: maroon;
+  border-style: solid;
+  
+}
+
+/* .column{
+  padding:10px;
+  height:300px; */
+
+/* } */
+.column-middle{
+  /* grid-area:middle; */
+  align-content: center;
+  text-align: center;
+  min-height: 600px;
+  border-radius: 5px;
+  border-color: maroon;
+  border-style: solid;
+}
+
+.l-side{
+  /* grid-area: left; */
+  
+  align-content: center;
+  border-radius: 5px;
+  border-color: maroon;
+  border-style: solid;
+  font-size: 80px;
+
+}
+.r-side{
+  /* grid-area: right; */
+   
+   border-radius: 5px;
+  border-color: maroon;
+  border-style: solid;
+  font-size: 80px;
+}
+#left-side{
+  background-color: aqua;
+  /* height:300px; */
+}
+
+#left-button{
+ 
+}
+#center-gif{
+  align-items: center;
+}
+#right-side{
+  align-items: center;
+  background-color: blue;
+  /* height:300px; */
+}
+#right-button{
+  align-items: center;
+}
+.search-title{
+  border-radius: 5px;
+border-color: maroon;
+border-style: solid;
+
+}
+.search-section{
+  border-radius: 5px;
+border-color: maroon;
+border-style: solid;
+}
+
+.nav-instructions{
+  border-radius: 5px;
+border-color: maroon;
+border-style: solid;
+}
+/* move arrows below gif */
+@media (max-width:900px){
+  .row{
+    display:grid;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows: 4fr 1fr 1fr;
+  }
+
+  .row div:nth-child(2){
+    grid-column-start:1;
+grid-column-end: 5;
+grid-row-start: 1;
+grid-row-end: 4;
+  }
+.row div:nth-child(3){
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+grid-row-end: 5;
+}
+.row div:nth-child(1){
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+grid-row-end: 5;
+
+}
+
+
+
+}
+

@@ -109,6 +109,7 @@ function showGifData(data) {
   let gifContainer = document.getElementById('center-gif')
   let gifPicture = document.createElement('iframe')
   gifPicture.id = "gif"
+  gifPicture.style.minHeight = "600px"
 
   // gifPicture.src = `${data.embed_url}`
   gifPicture.src = `${data.images.downsized_large.url}`
