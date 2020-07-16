@@ -112,7 +112,7 @@ function showGifData(data) {
   gifPicture.style.minHeight = "600px"
 
   // gifPicture.src = `${data.embed_url}`
-  gifPicture.src = `${data.images.downsized_large.url}`
+  gifPicture.src = `${data.images.original.url}`
   console.log(gifPicture)
   gifContainer.appendChild(gifPicture)
   console.log(gifPicture)
