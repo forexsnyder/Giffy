@@ -10,7 +10,7 @@ function gifApi() {
   return BASE_URL
 }
 function ending() {
-  const end = `&${API_KEY}&limit=8`;
+  const end = `&${API_KEY}&limit=10`;
   return end
 }
 let test1 = gifApi() + ending()
@@ -86,8 +86,16 @@ function rightButton() {
     e.preventDefault()
     removeGif()
     gifArray++
-    console.log(gifArray)
-    showGifData(data[gifArray])
+    if (gifArray <= 9) {
+      console.log(gifArray)
+      showGifData(data[gifArray])
+    } else {
+
+      let gifContainer = document.getElementById('center-gif')
+      let gifEnd = document.createElement("h2")
+      gifEnd.innerHTML = "The End"
+      gifContainer.appendChild(gifEnd)
+    }
   })
 
 }
