@@ -105,7 +105,7 @@ border-style: solid; */
 border-style: solid; */
 }
 /* move arrows below gif */
-@media screen and (max-width:900px){
+@media (max-width:900px){
   .row{
     display:grid;
     grid-template-columns:repeat(4,1fr) ;
