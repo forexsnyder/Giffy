@@ -8,23 +8,25 @@ body{
 }
 
 .header{
-  background-color: #f1f1f1;
+  background-color: black;
+  color:gray;
   padding: 30px;
   text-align: center;
   font-size: 35px;
   border-radius: 5px;
-border-color: maroon;
+border-color:black;
 border-style: solid;
 }
 /* Grid Container */
 .row{
   display:grid;
+  color:gray;
   grid-template-columns:repeat(3,1fr);
   padding:10px;
   justify-content:center;
   align-items: center;
   border-radius: 5px;
-  border-color: maroon;
+  border-color: black;
   border-style: solid;
   
 }
@@ -40,7 +42,7 @@ border-style: solid;
   text-align: center;
   min-height: 600px;
   border-radius: 5px;
-  border-color: maroon;
+  border-color: black;
   border-style: solid;
 }
 
@@ -49,7 +51,7 @@ border-style: solid;
   
   align-content: center;
   border-radius: 5px;
-  border-color: maroon;
+  border-color: black;
   border-style: solid;
   font-size: 80px;
 
@@ -58,12 +60,12 @@ border-style: solid;
   /* grid-area: right; */
    
    border-radius: 5px;
-  border-color: maroon;
+  border-color: black;
   border-style: solid;
   font-size: 80px;
 }
 #left-side{
-  background-color: aqua;
+  background-color:black;
   /* height:300px; */
 }
 
@@ -75,10 +77,11 @@ border-style: solid;
 }
 #right-side{
   align-items: center;
-  background-color: blue;
+  background-color:black;
   /* height:300px; */
 }
 #right-button{
+  color:grey;
   align-items: center;
 }
 .search-title{
