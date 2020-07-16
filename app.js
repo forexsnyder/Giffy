@@ -109,20 +109,26 @@ function leftButton() {
 // Create dynamic HTML
 function showGifData(data) {
   let gifContainer = document.getElementById('center-gif')
-  let gifPicture = document.createElement('iframe')
+  let gifContent = document.createElement("div")
+  gifContent.id = "gif-contented"
+  gifContent.style.justifyContent = "center"
+  gifContent.style.alignContent = "center"
+  let gifPicture = document.createElement('img')
   gifPicture.id = "gif"
   gifPicture.style.width = "100%"
-  gifPicture.style.height = "600px"
+  gifPicture.style.minHeight = "400px"
   // gifPicture.style.minHeight = "600px"
 
 
   // gifPicture.src = `${data.embed_url}`
   gifPicture.src = `${data.media[0].gif.url}`
+  gifPicture.style.objectFit = "contain"
+
   console.log(gifPicture)
   // gifPicture.setAttribute('allowFullScreen', '')
   // gifPicture.setAttribute("frameborder", "0")
-
-  gifContainer.appendChild(gifPicture)
+  gifContainer.appendChild(gifContent)
+  gifContent.appendChild(gifPicture)
   console.log(gifPicture)
 
   // moviePoster.style.textJustify = "bottom"
