@@ -1,10 +1,9 @@
+
+
+
+//Construct API search URL
 const DOMAIN = `https://api.tenor.com/v1/search?q=`;
-
-
-
-const API_KEY = `key=S91BSLYCXDMF`; /* Your API key goes here */
-
-
+const API_KEY = `key=S91BSLYCXDMF`;
 const BASE_URL = `${DOMAIN}`;
 function gifApi() {
   return BASE_URL
@@ -13,84 +12,64 @@ function ending() {
   const end = `&${API_KEY}&limit=10`;
   return end
 }
-let test1 = gifApi() + ending()
-console.log(test1)
+// let test1 = gifApi() + ending()
+// console.log(test1)
 
+//Global variables
 let gifArray = 0
-data = null
+let data = null
 
-// API Country call function
+// API search function
 async function fetchData(gif) {
 
   try {
-
-
-
-
-    //let data.Title = ''//http://www.omdbapi.com/?apikey=3e89f4b8&s=casablanca
     let gifData = await axios.get(gifApi() + `${gif}` + ending())
 
-    //search()
+    //creating the gif array
     data = gifData.data.results
-    console.log(data)
-
-    // console.log(data[0].embed_url)
-
-
+    //console.log(data)
 
     showGifData(data[gifArray])
-    rightButton(gifArray)
-    console.log(gifArray)
+    rightButton(data, gifArray)
+    // console.log(gifArray)
     leftButton(gifArray)
-    console.log(gifArray)
-
-
-    // backButton(data)
-    //create DIV styl
-    // for (i = 0; i < data.length; i++) {
-    //   showGifData(data[i])
-    //   // test1Function(data[i])
-    // }
+    // console.log(gifArray)
   }
   catch (error) {
     console.log(error)
-
-
   }
 
 }
-
-
 
 
 //Search function
 function search() {
-
   const submit = document.getElementById('search')
   submit.addEventListener('click', (e) => {
-
     e.preventDefault()
     const inputValue = document.getElementById('blank').value
-    //console.log(inputValue)
+    //Remove previous Gif
     removeGif()
-    // createDiv()
     fetchData(inputValue)
-
-
   })
 }
+//Kick off the good times
 search()
+
+//Next button event listener
 function rightButton() {
   const rButton = document.getElementById("r-button")
   rButton.addEventListener('click', (e) => {
     e.preventDefault()
     removeGif()
     gifArray++
-    if (gifArray <= 9) {
+
+
+    //If statement to catch the end of the array results 
+    if (gifArray < data.length) {
       console.log(gifArray)
       showGifData(data[gifArray])
     } else {
-
       let gifContainer = document.getElementById('center-gif')
       let gifEnd = document.createElement("h2")
       gifEnd.innerHTML = "The End"
@@ -99,7 +78,7 @@ function rightButton() {
   })
 
 }
-
+//Back button
 function leftButton() {
   const lButton = document.getElementById("l-button")
   lButton.addEventListener('click', (e) => {
@@ -124,24 +103,14 @@ function showGifData(data) {
   let gifPicture = document.createElement('img')
   gifPicture.id = "gif"
   gifPicture.style.width = "100%"
-  gifPicture.style.minHeight = "400px"
-  // gifPicture.style.minHeight = "600px"
-
-
-  // gifPicture.src = `${data.embed_url}`
+  gifPicture.style.maxHeight = "400px"
   gifPicture.src = `${data.media[0].gif.url}`
   gifPicture.style.objectFit = "contain"
-
-  console.log(gifPicture)
-  // gifPicture.setAttribute('allowFullScreen', '')
-  // gifPicture.setAttribute("frameborder", "0")
   gifContainer.appendChild(gifContent)
   gifContent.appendChild(gifPicture)
-  console.log(gifPicture)
-
-  // moviePoster.style.textJustify = "bottom"
-  // moviePoster.style.fontSize = "25px"
 }
+
+//Remove previous Gif's
 function removeGif() {
   const appendGif = document.getElementById("center-gif")
   while (appendGif.lastChild) {
