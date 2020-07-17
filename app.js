@@ -71,7 +71,6 @@ function rightButton() {
     }
   })
 
-
 }
 //Back button
 function leftButton() {
@@ -81,7 +80,6 @@ function leftButton() {
       e.preventDefault()
       removeGif()
       gifArray--
-      console.log(gifArray)
       showGifData(data[gifArray])
     } else {
 
