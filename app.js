@@ -12,33 +12,28 @@ function ending() {
   const end = `&${API_KEY}&limit=20`;
   return end
 }
-// let test1 = gifApi() + ending()
-// console.log(test1)
+
 
 //Global variables
 let gifArray = 0
 let data = null
 
+
 // API search function
 async function fetchData(gif) {
-
   try {
     let gifData = await axios.get(gifApi() + `${gif}` + ending())
 
     //creating the gif array
     data = gifData.data.results
-    //console.log(data)
-
+    //Displaying results
     showGifData(data[gifArray])
     rightButton(data, gifArray)
-    // console.log(gifArray)
     leftButton(gifArray)
-    // console.log(gifArray)
   }
   catch (error) {
     console.log(error)
   }
-
 }
 
 
@@ -57,6 +52,7 @@ function search() {
 //Kick off the good times
 search()
 
+
 //Next button event listener
 function rightButton() {
   const rButton = document.getElementById("r-button")
@@ -64,11 +60,8 @@ function rightButton() {
     e.preventDefault()
     removeGif()
     gifArray++
-
-
     //If statement to catch the end of the array results 
     if (gifArray < data.length) {
-      //console.log(gifArray)
       showGifData(data[gifArray])
     } else {
       let gifContainer = document.getElementById('center-gif')
@@ -77,6 +70,7 @@ function rightButton() {
       gifContainer.appendChild(gifEnd)
     }
   })
+
 
 }
 //Back button
@@ -106,13 +100,11 @@ function showGifData(data) {
   gifContent.style.alignContent = "center"
   let gifPicture = document.createElement('img')
   gifPicture.id = "gif-main"
-  // gifPicture.style.width = "100%"
-  // gifPicture.style.maxHeight = "400px"
   gifPicture.src = `${data.media[0].gif.url}`
-  // gifPicture.style.objectFit = "contain"
   gifContainer.appendChild(gifContent)
   gifContent.appendChild(gifPicture)
 }
+
 
 //Remove previous Gif's
 function removeGif() {
