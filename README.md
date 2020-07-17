@@ -8,7 +8,7 @@ The API the project uses is from https://tenor.com
 
 
 An example of the API's code snippet:
-{
+```{
   "weburl": "https://tenor.com/search/beach-gifs",
   "results": [
     {
@@ -61,17 +61,17 @@ An example of the API's code snippet:
               196
             ],
             "preview": "https://media.tenor.com/images/8799b7c8352aa884b0978182f22523e2/tenor.png",    
-
+```
 
 - **Wireframes**:
-https://wireframe.cc/mGukNC
+![alt text](https://wireframe.cc/mGukNC)
 
 
 - **MVP**: 
-Features include.  Search bar with a Submit button.  Display results in the middle of the page.  Navigation buttons.  Return results from Giphy API. Dynamic scaling, nvigation buttons will change according to screen size.
+Features include.  Search bar with a Submit button.  Display results in the middle of the page.  Navigation buttons.  Return results from Giphy API. Dynamic scaling, navigation buttons will change according to screen size.
 - **Post-MVP**:
 Queue the next 5 Gifs in a window at the bottom of the screen.  Be able to tap on the gif to enlarge and see only the gif.  Have a return button.
-- **Goals**: What you plan to accomplish for each day of the project week.
+- **Goals**: 
 Moday: Html basics.  CSS placement of objects.  JS return GIF data.
 Tuesday: Create functionality in Buttons and Search bar.  Standardize the gif sizing. Confirm API is cycling through the Gifs 
 Wednesday:Create the Dynamic aspect of app for screen sizing. 
