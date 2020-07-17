@@ -108,7 +108,17 @@ border-style: solid; */
   
    
   }
+  /* style gif return */
+#gif{
+  grid-column-start:1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  object-fit: contain;
+  width:90%;
+  height:400px;
 
+}
   .row div:nth-child(2){
     grid-column-start:1;
     grid-column-end: 5;
