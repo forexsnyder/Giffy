@@ -145,19 +145,23 @@ border-style: solid; */
 }
 
 
-@media (min-width: 2000px){
+@media (min-width: 2500px){
   
   .row{
-    display:grid;
-    grid-template-columns:1fr 4fr 1fr ;
-    background-color: blue;
+    display:flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    padding: 80px;
+    background-color:black;
+  
   
   }
   .row div:nth-child(2){
-object-fit: contain;
-width:50%;
-height:600px;
-background-color: blue;
+justify-self: center;
+width:30%;
+max-height:400px;
+margin: 100px;
 
 }
 
