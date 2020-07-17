@@ -3,7 +3,7 @@ Giphy's Gif Giffer
 - **App Description**:
 This app will enables the user to search  Giphy.com's gif library.  It presents the Gif in the middle of the screen.  There is a Next and Back button to allow navigation of the search results. 
 - **API**:
-The API the project uses is https://developers.giphy.com/.- 
+The API the project uses is from https://tenor.com 
 **API Snippet**: 
 
 
