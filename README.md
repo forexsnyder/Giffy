@@ -81,3 +81,26 @@ Wednesday:Create the Dynamic aspect of app for screen sizing.
 - **Timeframes**: 
 ![TimeFrame](https://git.generalassemb.ly/jvsnyder/Giphys-Giffer/blob/master/Timesheet.JPG)
 
+- **Code-Snippet**:
+```// API search function
+async function fetchData(gif) {
+
+  try {
+    let gifData = await axios.get(gifApi() + `${gif}` + ending())
+
+    //creating the gif array
+    data = gifData.data.results
+    //console.log(data)
+
+    showGifData(data[gifArray])
+    rightButton(data, gifArray)
+    // console.log(gifArray)
+    leftButton(gifArray)
+    // console.log(gifArray)
+  }
+  catch (error) {
+    console.log(error)
+  }
+
+}
+```
