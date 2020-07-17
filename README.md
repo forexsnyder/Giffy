@@ -64,7 +64,7 @@ An example of the API's code snippet:
 ```
 
 - **Wireframes**:
-![alt text](https://wireframe.cc/mGukNC)
+https://wireframe.cc/mGukNC
 
 
 - **MVP**: 
@@ -78,5 +78,6 @@ Wednesday:Create the Dynamic aspect of app for screen sizing.
 
 - **Priority Matrix**:
 http://www.mediafire.com/view/lnouhe17fw2gmeg/Chart%20Time%20x%20Priority.JPG
-- **Timeframes**: http://www.mediafire.com/view/eycjm6h4xulzrgv/Time%20Sheet.JPG
+- **Timeframes**: 
+![alt text]http://www.mediafire.com/view/eycjm6h4xulzrgv/Time%20Sheet.JPG
 
