@@ -104,3 +104,6 @@ async function fetchData(gif) {
 
 }
 ```
+- **Change Log**:
+Changed API source.  I was not getting the GIF's from Giphy to display fullwindow.  Despite coding the fullwindow request.
+Styling widths and adding an extra media query to handle wide monitors. At widths above 2800px the gifs were going over the search menu and becoming too granular.
