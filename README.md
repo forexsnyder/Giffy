@@ -90,13 +90,13 @@ async function fetchData(gif) {
 
     //creating the gif array
     data = gifData.data.results
-    //console.log(data)
+    
 
     showGifData(data[gifArray])
     rightButton(data, gifArray)
     // console.log(gifArray)
     leftButton(gifArray)
-    // console.log(gifArray)
+    
   }
   catch (error) {
     console.log(error)
