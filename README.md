@@ -79,5 +79,5 @@ Wednesday:Create the Dynamic aspect of app for screen sizing.
 - **Priority Matrix**:
 ![Priority MAtrix](https://git.generalassemb.ly/jvsnyder/Giphys-Giffer/blob/master/Chart%20Time%20x%20Priority.JPG)
 - **Timeframes**: 
-![TimeFrame](https://git.generalassemb.ly/jvsnyder/Giphys-Giffer/blob/master/Time%20Sheet.JPG)
+![TimeFrame](https://git.generalassemb.ly/jvsnyder/Giphys-Giffer/blob/master/Timesheet.JPG)
 
