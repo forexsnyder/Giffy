@@ -50,6 +50,7 @@ function search() {
     const inputValue = document.getElementById('blank').value
     //Remove previous Gif
     removeGif()
+    gifArray = 0
     fetchData(inputValue)
   })
 }
@@ -67,7 +68,7 @@ function rightButton() {
 
     //If statement to catch the end of the array results 
     if (gifArray < data.length) {
-      console.log(gifArray)
+      //console.log(gifArray)
       showGifData(data[gifArray])
     } else {
       let gifContainer = document.getElementById('center-gif')
@@ -82,12 +83,15 @@ function rightButton() {
 function leftButton() {
   const lButton = document.getElementById("l-button")
   lButton.addEventListener('click', (e) => {
-    e.preventDefault()
-    removeGif()
-    gifArray--
-    console.log(gifArray)
-    showGifData(data[gifArray])
+    if (gifArray > 0) {
+      e.preventDefault()
+      removeGif()
+      gifArray--
+      console.log(gifArray)
+      //showGifData(data[gifArray])
+    } else {
 
+    }
   })
 
 }
@@ -105,7 +109,7 @@ function showGifData(data) {
   gifPicture.style.width = "100%"
   gifPicture.style.maxHeight = "400px"
   gifPicture.src = `${data.media[0].gif.url}`
-  gifPicture.style.objectFit = "contain"
+  // gifPicture.style.objectFit = "contain"
   gifContainer.appendChild(gifContent)
   gifContent.appendChild(gifPicture)
 }
