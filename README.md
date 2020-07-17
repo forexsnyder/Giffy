@@ -64,7 +64,7 @@ An example of the API's code snippet:
 ```
 
 - **Wireframes**:
-https://wireframe.cc/mGukNC
+![Wireframe](https://git.generalassemb.ly/jvsnyder/Giphys-Giffer/blob/master/Wireframe.JPG)
 
 
 - **MVP**: 
