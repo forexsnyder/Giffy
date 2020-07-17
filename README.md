@@ -8,38 +8,59 @@ The API the project uses is from https://tenor.com
 
 
 An example of the API's code snippet:
-
-    "data": {
-        "type": "gif",
-        "id": "jqYW2qyvWZGG8Shoqo",
-        "url": "https://giphy.com/gifs/luliygabo-jqYW2qyvWZGG8Shoqo",
-        "slug": "luliygabo-jqYW2qyvWZGG8Shoqo",
-        "bitly_gif_url": "https://gph.is/g/aQxGkkE",
-        "bitly_url": "https://gph.is/g/aQxGkkE",
-        "embed_url": "https://giphy.com/embed/jqYW2qyvWZGG8Shoqo",
-        "username": "luliygabo",
-        "source": "",
-        "title": "GIF by Luli y Gabo",
-        "rating": "g",
-        "content_url": "",
-        "source_tld": "",
-        "source_post_url": "",
-        "is_sticker": 0,
-        "import_datetime": "2019-05-06 17:09:36",
-        "trending_datetime": "0000-00-00 00:00:00",
-        "images": {
-            "downsized_large": {
-                "height": "480",
-                "size": "2974405",
-                "url": "https://media3.giphy.com/media/jqYW2qyvWZGG8Shoqo/giphy.gif?cid=13158784123ffa174cafa2017887f9502e7c7fa6831637b3&rid=giphy.gif",
-                "width": "480"
-            },
-            "fixed_height_small_still": {
-                "height": "100",
-                "size": "2307",
-                "url": "https://media3.giphy.com/media/jqYW2qyvWZGG8Shoqo/100_s.gif?cid=13158784123ffa174cafa2017887f9502e7c7fa6831637b3&rid=100_s.gif",
-                "width": "100"
-            },
+{
+  "weburl": "https://tenor.com/search/beach-gifs",
+  "results": [
+    {
+      "tags": [],
+      "url": "https://tenor.com/FkOF.gif",
+      "media": [
+        {
+          "nanomp4": {
+            "url": "https://media.tenor.com/videos/7f8c1199603b82c371e7ce1dcc76e316/mp4",
+            "dims": [
+              86,
+              94
+            ],
+            "duration": 2.75,
+            "preview": "https://media.tenor.com/images/890490b7639d47350c80729b7355c143/tenor.png",
+            "size": 40280
+          },
+          "nanowebm": {
+            "url": "https://media.tenor.com/videos/4b542b6c27d076df5a03a566fa7d817b/webm",
+            "dims": [
+              86,
+              94
+            ],
+            "preview": "https://media.tenor.com/images/890490b7639d47350c80729b7355c143/tenor.png",
+            "size": 43174
+          },
+          "tinygif": {
+            "url": "https://media.tenor.com/images/e386df2b4f8265f3bd33cccbb8e3ccf3/tenor.gif",
+            "dims": [
+              220,
+              243
+            ],
+            "preview": "https://media.tenor.com/images/5a2a74169f495578b67269cb4c6eb7a3/tenor.gif",
+            "size": 314185
+          },
+          "tinymp4": {
+            "url": "https://media.tenor.com/videos/035df1971a5d07f00974d1a5736fc979/mp4",
+            "dims": [
+              178,
+              196
+            ],
+            "duration": 2.75,
+            "preview": "https://media.tenor.com/images/8799b7c8352aa884b0978182f22523e2/tenor.png",
+            "size": 138315
+          },
+          "tinywebm": {
+            "url": "https://media.tenor.com/videos/3c5ac7f23bebb377cc7deec65f3eab03/webm",
+            "dims": [
+              178,
+              196
+            ],
+            "preview": "https://media.tenor.com/images/8799b7c8352aa884b0978182f22523e2/tenor.png",    
 
 
 - **Wireframes**:
