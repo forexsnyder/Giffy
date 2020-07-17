@@ -9,7 +9,7 @@ function gifApi() {
   return BASE_URL
 }
 function ending() {
-  const end = `&${API_KEY}&limit=10`;
+  const end = `&${API_KEY}&limit=20`;
   return end
 }
 // let test1 = gifApi() + ending()
