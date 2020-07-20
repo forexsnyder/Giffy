@@ -179,7 +179,7 @@ body{
     grid-row-end: 2;
     object-fit: contain;
     width:100%;
-    height:auto;
+    
 
  
 
@@ -188,7 +188,7 @@ body{
    display: grid;
    object-fit: contain;
    width: 100%;
-   height: auto;   
+   max-height: 300px;   
   }
   .row div:nth-child(2){
     grid-column-start:1;
